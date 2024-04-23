@@ -136,7 +136,8 @@ touch icons/marked.md --date=@0
 # BEGIN submodule
 cd git/*01 || exit
 git add "*01"
-git commit -m "Initial commit" # git doesn't allow us to create a submodule without a branch
+# git doesn't allow us to create a submodule without a branch
+GIT_COMMITTER_NAME="Your Name" GIT_COMMITTER_EMAIL="your@email.com" git commit --author="Your Name <your@email.com>" -m "Initial commit"
 cd ../.. || exit
 
 mkdir -p with_submodule
