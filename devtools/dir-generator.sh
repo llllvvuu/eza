@@ -144,9 +144,9 @@ mkdir -p with_submodule
 cd with_submodule || exit
 git init
 seq 01 10 | split -l 1 -a 3 -d - file_
+git -c protocol.file.allow=always submodule add ../*01
 touch --date=@0 ./*;
 touch --date=@0 ./*01/*;
-git -c protocol.file.allow=always submodule add ../*01
 cd .. || exit
 ln -s with_submodule with_submodule_symlink
 cd .. || exit
