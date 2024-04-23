@@ -1,24 +1,26 @@
-  12 git
-1002 grid
-   2 group
-   2 icons
-   2 perms
-   2 size
-   2 specials
-   3 symlinks
-   2 time
+   12 git
+2,002 grid
+    3 group
+   18 icons
+    4 perms
+    6 size
+    3 specials
+    9 symlinks
+    8 time
+   15 with_submodule
+    1 with_submodule_symlink -> with_submodule
 
 tests/test_dir/git:
-3 001
-3 002
-3 003
-3 004
-3 005
-3 006
-3 007
-3 008
-3 009
-3 010
+13 001
+13 002
+13 003
+13 004
+13 005
+13 006
+13 007
+13 008
+13 009
+13 010
 
 tests/test_dir/git/001:
 1 file_000
@@ -4167,6 +4169,9 @@ tests/test_dir/perms:
 1 file
 1 file2
 
+2 empty
+
+
 tests/test_dir/size:
 1 1B
 1 1K
@@ -4174,6 +4179,7 @@ tests/test_dir/size:
 1 1337
 
 tests/test_dir/specials:
+1 named-pipe
 
 tests/test_dir/symlinks:
 2 dir
@@ -4193,3 +4199,19 @@ tests/test_dir/time:
 1 1s
 1 1y
 1 epoch
+
+tests/test_dir/with_submodule:
+4 001
+1 file_000
+1 file_001
+1 file_002
+1 file_003
+1 file_004
+1 file_005
+1 file_006
+1 file_007
+1 file_008
+1 file_009
+
+tests/test_dir/with_submodule/001:
+1 file_001

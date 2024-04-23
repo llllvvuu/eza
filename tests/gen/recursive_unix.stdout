@@ -7,6 +7,8 @@ size
 specials
 symlinks
 time
+with_submodule
+with_submodule_symlink -> with_submodule
 
 tests/test_dir/git:
 001
@@ -4167,6 +4169,9 @@ tests/test_dir/perms:
 file
 file2
 
+empty
+
+
 tests/test_dir/size:
 1B
 1K
@@ -4174,6 +4179,7 @@ tests/test_dir/size:
 1337
 
 tests/test_dir/specials:
+named-pipe
 
 tests/test_dir/symlinks:
 dir
@@ -4193,3 +4199,19 @@ tests/test_dir/time:
 1s
 1y
 epoch
+
+tests/test_dir/with_submodule:
+001
+file_000
+file_001
+file_002
+file_003
+file_004
+file_005
+file_006
+file_007
+file_008
+file_009
+
+tests/test_dir/with_submodule/001:
+file_001

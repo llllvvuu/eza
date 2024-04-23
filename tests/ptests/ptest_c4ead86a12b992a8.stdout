@@ -2039,6 +2039,7 @@ tests/test_dir
 │  ├── 1M
 │  └── 1337
 ├── specials
+│  └── named-pipe
 ├── symlinks
 │  ├── dir
 │  ├── file
@@ -2047,10 +2048,23 @@ tests/test_dir
 │  ├── symlink2 -> symlink
 │  ├── symlink3 -> dir
 │  └── symlink4 -> pipitek
-└── time
-   ├── 1d
-   ├── 1h
-   ├── 1m
-   ├── 1s
-   ├── 1y
-   └── epoch
+├── time
+│  ├── 1d
+│  ├── 1h
+│  ├── 1m
+│  ├── 1s
+│  ├── 1y
+│  └── epoch
+├── with_submodule
+│  ├── 001
+│  ├── file_000
+│  ├── file_001
+│  ├── file_002
+│  ├── file_003
+│  ├── file_004
+│  ├── file_005
+│  ├── file_006
+│  ├── file_007
+│  ├── file_008
+│  └── file_009
+└── with_submodule_symlink -> with_submodule

@@ -7,6 +7,7 @@ size
 specials
 symlinks
 time
+with_submodule
 
 tests/test_dir/git:
 001
@@ -3048,6 +3049,9 @@ tests/test_dir/icons:
 
 tests/test_dir/perms:
 
+empty
+
+
 tests/test_dir/size:
 
 tests/test_dir/specials:
@@ -3058,3 +3062,8 @@ dir
 tests/test_dir/symlinks/dir:
 
 tests/test_dir/time:
+
+tests/test_dir/with_submodule:
+001
+
+tests/test_dir/with_submodule/001:

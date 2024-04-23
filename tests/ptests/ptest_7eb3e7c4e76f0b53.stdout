@@ -7,4 +7,6 @@ tests/test_dir
 ├── size
 ├── specials
 ├── symlinks
-└── time
+├── time
+├── with_submodule
+└── with_submodule_symlink -> with_submodule

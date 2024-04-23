@@ -1,0 +1,13 @@
+drwxr-xr-x - nixbld 23 Apr 02:36 001
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_000
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_001
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_002
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_003
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_004
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_005
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_006
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_007
+.rw-r--r-- 2 nixbld 23 Apr 02:36 file_008
+.rw-r--r-- 3 nixbld 23 Apr 02:36 file_009
+
+tests/test_dir/with_submodule/001:

@@ -7,3 +7,5 @@
 0755 drwxr-xr-x - nixbld  1 Jan  1970 specials
 0755 drwxr-xr-x - nixbld  1 Jan  1970 symlinks
 0755 drwxr-xr-x - nixbld  1 Jan  1970 time
+0755 drwxr-xr-x - nixbld  1 Jan  1970 with_submodule
+0755 lrwxr-xr-x - nixbld 23 Apr 02:36 with_submodule_symlink -> with_submodule

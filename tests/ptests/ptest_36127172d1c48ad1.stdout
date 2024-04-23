@@ -1,8 +1,11 @@
-git       time
-grid      
-group     
-icons     
-perms     
-size      
-specials  
-symlinks  
+git
+grid
+group
+icons
+perms
+size
+specials
+symlinks
+time
+with_submodule
+with_submodule_symlink

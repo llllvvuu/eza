@@ -7,3 +7,5 @@ drwxr-xr-x - nixbld  1 Jan  1970 size
 drwxr-xr-x - nixbld  1 Jan  1970 specials
 drwxr-xr-x - nixbld  1 Jan  1970 symlinks
 drwxr-xr-x - nixbld  1 Jan  1970 time
+drwxr-xr-x - nixbld  1 Jan  1970 with_submodule
+lrwxr-xr-x - nixbld 23 Apr 02:36 with_submodule_symlink -> with_submodule

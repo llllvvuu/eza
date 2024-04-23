@@ -4,6 +4,8 @@
  icons
  perms
  size
- specials
+ specials
  symlinks
  time
+ with_submodule
+ with_submodule_symlink -> with_submodule
