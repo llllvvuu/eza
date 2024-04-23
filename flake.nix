@@ -263,7 +263,7 @@
             (packages)
             default
             test
-            trycmd
+            trycmd-local
             ;
           lint = packages.clippy;
         };
