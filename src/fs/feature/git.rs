@@ -229,7 +229,12 @@ impl GitRepo {
             let relative_submodule_paths = self.relative_submodule_paths.read().unwrap();
             match &*relative_submodule_paths {
                 Some(Ok(paths)) => {
-                    return check_submodule_paths(paths, path, &self.extra_paths, &self.original_path);
+                    return check_submodule_paths(
+                        paths,
+                        path,
+                        &self.extra_paths,
+                        &self.original_path,
+                    );
                 }
                 Some(Err(_)) => return false,
                 None => {}
@@ -238,7 +243,9 @@ impl GitRepo {
 
         let mut relative_submodule_paths = self.relative_submodule_paths.write().unwrap();
         match &*relative_submodule_paths {
-            Some(Ok(paths)) => check_submodule_paths(paths, path, &self.extra_paths, &self.original_path),
+            Some(Ok(paths)) => {
+                check_submodule_paths(paths, path, &self.extra_paths, &self.original_path)
+            }
             Some(Err(_)) => false,
             None => {
                 let repo = self.repo.lock().unwrap();
