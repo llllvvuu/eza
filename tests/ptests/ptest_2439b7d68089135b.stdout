@@ -74,5 +74,6 @@ LONG VIEW OPTIONS
   --git                        list each file's Git status, if tracked or ignored
   --no-git                     suppress Git status (always overrides --git,
                                --git-repos, --git-repos-no-status)
+  --git-repos                  list root of git-tree status
   -@, --extended               list each file's extended attributes and sizes
   -Z, --context                list each file's security context
