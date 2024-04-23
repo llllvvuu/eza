@@ -156,9 +156,9 @@ impl GitRepo {
 
         debug!("Querying Git repo {:?} for the first time", &self.workdir);
         let repo = self.repo.lock().unwrap();
-        let statuses = repo_to_statuses(&repo, &self.workdir);
-        let result = statuses.status(index, prefix_lookup);
-        *statuses = Some(statuses);
+        let new_statuses = repo_to_statuses(&repo, &self.workdir);
+        let result = new_statuses.status(index, prefix_lookup);
+        *statuses = Some(new_statuses);
         result
     }
 
@@ -234,12 +234,7 @@ impl GitRepo {
             let relative_submodule_paths = self.relative_submodule_paths.read().unwrap();
             match &*relative_submodule_paths {
                 Some(Ok(paths)) => {
-                    return is_in_submodule(
-                        paths,
-                        path,
-                        &self.extra_paths,
-                        &self.original_path,
-                    );
+                    return is_in_submodule(paths, path, &self.extra_paths, &self.original_path);
                 }
                 Some(Err(_)) => return false,
                 None => {}
@@ -248,9 +243,7 @@ impl GitRepo {
 
         let mut relative_submodule_paths = self.relative_submodule_paths.write().unwrap();
         match &*relative_submodule_paths {
-            Some(Ok(paths)) => {
-                is_in_submodule(paths, path, &self.extra_paths, &self.original_path)
-            }
+            Some(Ok(paths)) => is_in_submodule(paths, path, &self.extra_paths, &self.original_path),
             Some(Err(_)) => false,
             None => {
                 let repo = self.repo.lock().unwrap();
